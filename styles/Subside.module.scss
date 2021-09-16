@@ -1,0 +1,288 @@
+@import "./mixins";
+
+.SubSideImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/bssjlconsulting_dark.jpg"),
+    70% 75%,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SubSideImg:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.SalesforcesImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/sales-force-JL-Consulting_dark.png"),
+    60%,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SalesforcesImg:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+//section  two
+
+.container_section_two {
+  // border: solid 2px;
+  width: 57%;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.container_boxx {
+  display: flex;
+}
+
+.ImgCBPS {
+  width: 88px;
+  // height: 436px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 20px;
+}
+
+#Button4 {
+  position: relative;
+  bottom: 120px;
+}
+
+.contenuCBPS {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.h1_CBPS {
+  font: var(--unnamed-font-style-normal) normal 900 4.375rem/82px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 900 4.375rem/82px Metropolis;
+  letter-spacing: 0px;
+}
+
+.h2_CBPS {
+  text-align: left;
+  font: normal normal bold 1.5625rem/33px Metropolis;
+  color: #529bd4;
+  margin-bottom: 20px;
+  opacity: 1;
+}
+
+.description_CBPS {
+  text-align: left;
+  font: normal normal 300 1.4375rem Metropolis;
+  line-height: 35px;
+}
+
+#descriptionSUBSIDE {
+  width: 711px;
+}
+
+//section three
+
+.container_box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  justify-content: center;
+}
+
+.Box {
+  box-shadow: 0px 3px 20px #00000012;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0px 115px 43px;
+  background-color: white;
+}
+
+.Box_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+.Box_text {
+  width: 422px;
+}
+
+.h1,
+.p {
+  text-align: center;
+}
+.h1 {
+  margin-bottom: 15px;
+}
+
+.p {
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal normal 1.4375rem Metropolis;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #434345;
+}
+
+.Img_Box {
+  width: 200px;
+  object-fit: cover;
+  position: absolute;
+  margin-left: -175px;
+  z-index: -1;
+  margin-top: 30px;
+}
+
+#RC_img {
+  position: absolute;
+  z-index: -1;
+}
+
+#Flexibilite {
+  height: fit-content;
+  position: relative;
+  top: 67px;
+}
+
+#CRM {
+  // border: solid 2px blue;
+  align-self: flex-start;
+}
+
+#Flexibilite_img {
+  position: relative;
+  bottom: 100px;
+}
+
+#blox_leftMesure {
+  margin-top: 90px;
+  margin-bottom: 112px;
+  padding: 10px;
+}
+
+#blox_left {
+  margin-bottom: 112px;
+  padding: 20px;
+}
+
+#RC {
+  position: relative;
+  top: 68px;
+  height: fit-content;
+  // padding: 0px 60px;
+}
+
+#FDV {
+  position: relative;
+  bottom: 51px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1800px) {
+  #SubSideTitle {
+    margin-top: 100px;
+  }
+  #CircleSubSide {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  #RC {
+    position: relative;
+    top: -20px;
+  }
+
+  #CircleSubSide {
+    font-size: 2.8rem;
+  }
+
+  #descriptionSUBSIDE {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #CircleSubSide {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #descriptionSUBSIDE {
+    width: auto;
+  }
+
+  .Box_text {
+    width: auto;
+    padding: 15px;
+  }
+
+  .h1_CBPS {
+    font-size: 2rem;
+    width: auto;
+  }
+  .h2_CBPS {
+    font-size: 1rem;
+    width: auto;
+    line-height: 20px;
+  }
+
+  .description_CBPS {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  .container_section_two {
+    width: 90%;
+  }
+
+  #CircleSubSide {
+    font-size: 2rem;
+  }
+
+  .Box {
+    width: fit-content;
+    padding: auto;
+  }
+  .p {
+    width: 200px;
+    font-size: 0.7rem;
+    margin: 0 auto;
+  }
+
+  .Img_Box {
+    width: 80px;
+    height: 80px;
+    margin-left: -60px;
+  }
+}

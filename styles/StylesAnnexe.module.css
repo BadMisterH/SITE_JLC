@@ -1,0 +1,332 @@
+.blocs {
+  width: 100%;
+  padding-top: 150px;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 20px 0 20px;
+  -ms-grid-columns: 1fr 0.7fr;
+      grid-template-columns: 1fr 0.7fr;
+  grid-gap: 20px;
+  font-family: "Metropolis", sans-serif;
+  color: #005784;
+  font-size: initial;
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten {
+  margin: 100px 20px 100px 0;
+}
+
+.imageBackground {
+  position: absolute;
+  margin-top: 72%;
+  margin-left: 25%;
+}
+
+.h1 {
+  text-transform: uppercase;
+}
+
+.one {
+  padding: 20px 100px 20px 100px;
+}
+
+.three {
+  padding-top: 80px;
+}
+
+.five,
+.eight,
+.nine {
+  margin: 0 auto;
+}
+
+.eleven {
+  width: auto;
+  height: 42vh;
+  border: none;
+}
+
+.fondJLC {
+  padding: 200px 0 100px 0;
+  background: url("../images/fondJLC.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #ecf4fd;
+  font-family: "Metropolis", sans-serif;
+  color: none;
+  font-size: none;
+  font-weight: none;
+  line-height: initial;
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 5px 15px -5px #000000;
+  box-shadow: 5px 5px 15px -5px #000000;
+}
+
+.shadow:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+#bloc2 {
+  position: relative;
+  top: 350px;
+}
+
+.spaceImg {
+  margin-bottom: 20px;
+}
+
+.BoxPuzzle {
+  width: 100%;
+}
+
+.puzzleTexts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.imgPuzzle {
+  background: url("../images/puzzleProblematique.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: initial;
+  height: 490px;
+  width: 50%;
+}
+
+.boxProblematique {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbarr {
+  background-color: red;
+}
+
+.Banner {
+  background: url("../images/banniere.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: initial;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 480px;
+}
+
+.Banner2 {
+  background: url("../images/banniere2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: initial;
+  height: 480px;
+}
+
+.IconBanner {
+  background: url("../images/iconBanner.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: initial;
+  height: 200px;
+  margin: 30px;
+}
+
+.Position {
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.bloccs {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bloccss {
+  width: 538px;
+  height: 750px;
+  background: url("../images/workk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: initial;
+}
+
+.titre {
+  font-family: "Metropolis", sans-serif;
+  color: #000000;
+  font-size: 21px;
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+.textts {
+  font-family: "Metropolis", sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 1.5;
+  width: 80%;
+  margin: 0;
+}
+
+.section2 {
+  width: 83vw;
+  margin: 0 auto;
+  height: 600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (17.1875vw)[4];
+      grid-template-columns: repeat(4, 17.1875vw);
+}
+
+.circle {
+  height: auto;
+  margin: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 100%;
+  border: solid 2px black;
+}
+
+.circle:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.section3 {
+  height: 1032px;
+  width: 83vw;
+  -webkit-box-shadow: 5px 5px 15px 0px #747474;
+  box-shadow: 5px 5px 15px 0px #747474;
+  padding: 70px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (31.25vw)[2];
+      grid-template-columns: repeat(2, 31.25vw);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 100px;
+}
+
+.bloc1Sectio3,
+.bloc2Section3,
+.bloc3Section3,
+.bloc4Section3 {
+  height: auto;
+  width: auto;
+  -webkit-box-shadow: 5px 5px 15px 0px #747474;
+  box-shadow: 5px 5px 15px 0px #747474;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: "Metropolis", sans-serif;
+  color: #000000;
+  font-size: normal;
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+.bloc1Sectio3:hover,
+.bloc2Section3:hover,
+.bloc3Section3:hover,
+.bloc4Section3:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.bloc1Section3 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
+
+.TitrePrincipale {
+  font-family: "Metropolis", sans-serif;
+  color: #747474;
+  font-size: 78px;
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+.imaggg {
+  border: solid 2px black;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 1900px) {
+  .vanishingBackground {
+    display: none;
+  }
+}
+/*# sourceMappingURL=StylesAnnexe.module.css.map */

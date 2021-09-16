@@ -1,0 +1,1187 @@
+@import "./mixins";
+
+.containerConsulting {
+  background: url("/logoOfficielJL/fond_JL-Consulting_logo.svg") no-repeat;
+  background-size: 100%;
+  height: 93%;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  opacity: 0.26;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -10;
+}
+
+.backgroundImagePoleSolution {
+  background: url("/assets/img/pole-solution-jl-consulting-laptop-open.jpg");
+  padding: 96px 0 0px;
+  width: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+}
+
+.BlocTitre {
+  width: 51vw;
+  height: auto;
+  padding: 20px 0 20px;
+  border-radius: 17px;
+  margin: 0 auto 0;
+  align-items: flex-end;
+  position: relative;
+  top: 200px;
+  display: flex;
+}
+
+.titre_section_two_officiel_poles {
+  font-weight: 400;
+  font-size: calc(120 * var(--res)) !important;
+  margin: 0 auto;
+  color: white;
+}
+
+.titre_section_two_officiel_poles:before {
+  content: "pôle";
+  font-size: calc(150 * var(--res)) !important;
+  position: absolute;
+  top: 90px;
+  margin-left: -20px;
+  opacity: 0.4;
+  font: var(--unnamed-font-style-normal) normal 100 23px Metropolis;
+  font: normal normal 100 23px Metropolis;
+}
+
+.cercleConsulting {
+  border: solid 8px white;
+  width: 19vw;
+  height: 38vh;
+  position: relative;
+  bottom: 80%;
+  margin-left: 340px;
+  transform: translateY(-80%);
+  border-radius: 200px;
+}
+
+.cercleConsultingFormation {
+  border: solid 8px #3a3a3a;
+  position: absolute;
+  width: 529px;
+  height: 540px;
+  top: 18%;
+  margin-left: 100px;
+  transform: translateY(-80%);
+  border-radius: 300px;
+  opacity: 0.17;
+  z-index: -300;
+}
+
+.cercleConsultingVie {
+  border: solid 8px #3a3a3a;
+  position: absolute;
+  width: 529px;
+  height: 540px;
+  top: 265px;
+  margin-left: 100px;
+  transform: translateY(-80%);
+  border-radius: 300px;
+  opacity: 0.17;
+  z-index: -1;
+}
+
+.cercleConsultingAudit {
+  border: solid 8px #3a3a3a;
+  position: absolute;
+  width: 529px;
+  height: 540px;
+  margin-left: 380px;
+  transform: translateY(-80%);
+  border-radius: 300px;
+  opacity: 0.17;
+  z-index: -1;
+}
+
+.ColorConsulting {
+  filter: brightness(0) invert(1);
+  // border: solid 2px red;
+}
+
+.bloc_principale_consulting {
+  position: relative;
+  margin-top: 284px;
+}
+
+.bloc_secondaire_formation {
+  //   border: solid 10px yellowgreen;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.text_bloc_principale_consulting {
+  text-align: center;
+  font: normal normal 300 1.6rem Metropolis;
+  letter-spacing: 0px;
+  color: #3a3a3a;
+  width: 52vw;
+  margin: 0 auto 150px;
+  font-weight: 500 !important;
+}
+
+.ImgConsultingFormation {
+  height: 61vh;
+  width: 50vw;
+  position: relative;
+  right: 73px;
+  margin: 121px auto;
+  background: url("/assets/img/formation-jl-consulting.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ImgSprintDesign {
+  background: url("/assets/img/pole-bespoke-jl-consulting-.png");
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  height: 61vh;
+  width: 50vw;
+  position: relative;
+  left: 100px;
+  margin: 121px auto;
+}
+
+.container_box_audit {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.container_box_Subside {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.ImgConsultingAudit {
+  height: 61vh;
+  width: 50vw;
+  justify-content: flex-end;
+  margin: 121px;
+  background: url("/assets/img/audit-jl-consulting-reunion.png");
+  background-size: cover;
+}
+
+.ImgSolutionCRMSide {
+  height: 61vh;
+  width: 50vw;
+  position: relative;
+  right: 73px;
+  margin: 0 auto 121px;
+  background: url("/assets/img/img_CRM/CRMside_6.png");
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ImgSolutionSUBSide {
+  height: 61vh;
+  width: 50vw;
+  position: relative;
+  right: 73px;
+  margin: 121px auto;
+  background: url("/assets/img/bssjlconsulting.png");
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ImgSolutionSalesforceSide {
+  height: 61vh;
+  width: 50vw;
+  justify-content: flex-end;
+  margin: 121px;
+  background-size: cover;
+  background: url("/assets/img/bssjlconsulting.png");
+}
+
+.container_box_vie {
+  height: 61vh;
+  width: 100%;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.ImgConsultingVie {
+  height: 61vh;
+  width: 50vw;
+  margin-left: 9.27vw;
+  background: url("/assets/img/vis-ma-vie-jl-consulting.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.ImgStudioDesign {
+  height: auto;
+  width: 50vw;
+  margin-left: 9.27vw;
+  background: url("/assets/img/Apps-JL-Consulting.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.box_consulting {
+  height: auto;
+  background-color: white;
+  align-items: flex-end;
+  border-radius: 4px;
+  box-shadow: 0px 3px 33px #0000001a;
+  position: relative;
+  top: 45px;
+  right: 12vw;
+  padding: 60px 72px;
+  display: flex;
+}
+
+.box_subSide {
+  display: flex;
+  height: auto;
+  background-color: white;
+  align-items: flex-end;
+  border-radius: 4px;
+  box-shadow: 0px 3px 33px #0000001a;
+  position: relative;
+  right: 12vw;
+  padding: 60px 72px;
+  align-self: flex-start;
+  bottom: 100px;
+}
+
+.box_audit {
+  height: auto;
+  right: 33px;
+  background-color: white;
+  align-items: flex-start;
+  border-radius: 4px;
+  box-shadow: 0px 3px 33px #0000001a;
+  position: relative;
+  padding: 60px 0px;
+  bottom: 71px;
+  display: flex;
+}
+
+.box_Vie {
+  height: auto;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 3px 33px #0000001a;
+  position: relative;
+  top: 71px;
+  left: 9.58vw;
+  padding: 60px 0px;
+}
+.titre_bloc_formation {
+  text-align: center;
+  letter-spacing: 0px;
+  height: auto;
+  color: #3f3f3f;
+  font: var(--unnamed-font-style-normal) normal bold 30px/36px Metropolis;
+  font-weight: bold;
+  font-size: calc(60 * var(--res)) !important;
+  margin-bottom: 10px;
+}
+
+.description_bloc {
+  text-align: center;
+  font: normal normal normal 23px/23px Metropolis;
+  letter-spacing: 0px;
+  color: #3f3f3f;
+  width: 31vw;
+  margin: 0 auto;
+  height: fit-content;
+}
+
+.container {
+  margin: auto;
+  justify-content: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+}
+
+#PoleSprintDesign {
+  // border: solid 2px red;
+  display: flex;
+  position: relative;
+  left: 350px;
+}
+
+.TitreBloc {
+  font: var(--unnamed-font-style-normal) normal bold 30px/36px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal bold 30px/36px Metropolis;
+  letter-spacing: 0px;
+  color: #005784;
+  text-transform: uppercase;
+  margin-bottom: 49px;
+}
+
+.blocAdopt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: url("/assets/img/banniereJLC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 85px 0 85px;
+  margin-top: 96px;
+  // margin-top: -100px;
+}
+
+.backgroundImagePoleConsulting {
+  background: url("/assets/img/audit-jl-consulting-reunion.jpg");
+  padding: 136px 0 0px;
+  width: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+}
+
+.backgroundImagePoleStudioDesign {
+  background: url("/assets/img/SprintDesign.jpg");
+  padding: 186px 0 0px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-position: center;
+}
+
+.backgroundImagePoleStudioDesign_dark {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.022846638655462215) 36%
+  );
+  width: 100%;
+  height: 13.5%;
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+}
+
+.blocPartenaires {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background: url("/assets/img/fond_technologie.svg");
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  // border: solid 2px red;
+  // margin-top: 108px;
+}
+
+#blocApp {
+  // border: solid 2px red;
+  align-self: flex-start;
+  top: -60px;
+  left: -470px;
+}
+
+#boxApps {
+  margin-top: 100px;
+}
+
+.logos_clients {
+  height: 120px;
+  width: 120px;
+  margin: 0 23px;
+  background: url("/assets/img/logosClients/12_atid.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logoAxa {
+  background: url("/assets/img/logosClients/1200px-AXA_Logo.svg-min.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+  margin: -20px 33px;
+}
+
+.logos_clients_Subside {
+  height: 50px;
+  width: 200px;
+  margin: 0 23px;
+  background: url("/assets/img/logosClients/7_airmont.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logos_clients2 {
+  // height: 100px;
+  width: 150px;
+  margin: 0 30px;
+  background: url("/assets/img/logosClients/8_clarins.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logo_clientAtid {
+  width: 150px;
+  margin: 0 30px;
+  background: url("/assets/img/logosClients/12_atid.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logoKeolis {
+  width: 150px;
+  margin: 25px 30px;
+  background: url("/assets/img/logosClients/25_Keolis.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logoAycom {
+  width: 150px;
+  margin: 15px 30px;
+  background: url("/assets/img/logosClients/30_waycom.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logoLapeyre {
+  width: 150px;
+  margin: 5px 30px;
+  background: url("/assets/img/logosClients/31_lapeyre.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logoBB {
+  width: 120px;
+  margin: -20px 30px;
+  background: url("/assets/img/logosClients/17_B&B_Hotels.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo_clientBordeau {
+  height: 120px;
+  width: 120px;
+  background: url("/assets/img/logosClients/16_BordeauxTourismeBLANc.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo_manMachine {
+  width: 297px;
+  margin: 15px 41px;
+  background-position-y: center;
+  background: url("/assets/img/logosClients/20_man-machine.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo_DomExpert {
+  background: url("/assets/img/logosClients/DOM-EXPERT_logo2019_Groupe.png ");
+  width: 150px;
+  margin: 20px 30px 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logos_clients3 {
+  background: url("/assets/img/logosClients/16_BordeauxTourismeBLANc.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  // height: 120px;
+  width: 120px;
+  margin: 0 37px;
+}
+
+.logos_clients4 {
+  background: url("/assets/img/logosClients/31_lapeyre.png");
+  // height: 130px;
+  width: 130px;
+  margin: 0 37px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logos_omts {
+  background: url("/assets/img/logoPageOmts/logohellocare.png");
+  background-repeat: no-repeat;
+  // height: 130px;
+  width: 130px;
+  margin: 0 37px;
+  background-size: 100%;
+}
+
+.logos_omts2 {
+  background: url("/assets/img/logoPageOmts/logo-dv-site2.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-self: center;
+  height: 20px;
+  width: 130px;
+  margin: 0 37px;
+  background-size: 100%;
+}
+
+.logos_omts3 {
+  background: url("/assets/img/logoPageOmts/hook.png");
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 130px;
+  margin: 0 37px;
+  background-size: 100%;
+}
+
+.logos_omts4 {
+  background: url("/assets/img/logoPageOmts/T7iiOmXi_400x400.png");
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 130px;
+  margin: 0 37px;
+  background-size: 100%;
+}
+
+.logos_partenaire {
+  width: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat !important;
+  background: url("/assets/img/logosPartenaires/logo_partenaire_censhare_jl_consulting.svg");
+}
+.logos_partenaire2 {
+  height: 180px;
+  width: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat !important;
+  background: url("/assets/img/logosPartenaires/logo_partenaire_lobster_jl_consulting.svg");
+}
+
+.logos_partenaire3 {
+  width: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat !important;
+  background: url("/assets/img/logosPartenaires/logo_partenaire_ringover_jl_consulting.svg");
+}
+
+.logos_partenaire4 {
+  width: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat !important;
+  background: url("/assets/img/logosPartenaires/logo_partenaire_salesforce_jl_consulting.svg");
+}
+.ImgSolutionCRMSide,
+.ImgSolutionSUBSide,
+.ImgSolutionSalesforceSide,
+.ImgStudioDesign {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one_more_thing {
+  width: 100%;
+  // border: solid 2px red;
+  background: url("/assets/img/OMTS-jl-consulting.jpg") no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: cover;
+  background-size: 100%;
+  background-position-y: 57%;
+  align-items: center;
+  padding: 100px 0;
+  margin-top: 153px;
+}
+
+.backgrounColor_one_more_thing {
+  background: black;
+  width: 100%;
+  height: 526px; //responsive
+  position: absolute;
+  opacity: 0.2; //responsive
+}
+
+.circle_one_more {
+  height: 320px;
+  width: 700px;
+
+  @include backgroundFullSize(
+    url("/assets/img/OMTS_couleurs_carré_V-Couleurs.svg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+}
+
+@media screen and (max-width: 1024px) {
+  .ImgSolutionCRMSide,
+  .ImgSolutionSUBSide,
+  .ImgSolutionSalesforceSide,
+  .ImgSprintDesign,
+  .ImgSprintDesign {
+    height: auto;
+  }
+
+  #PoleSprintDesign {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logos_clients,
+  .logos_clients2,
+  .logos_clients3,
+  .logos_clients4 {
+    margin: 0 40px;
+  }
+
+  #boxApps {
+    margin: auto;
+  }
+
+  #blocApp {
+    position: relative;
+    left: 0;
+    align-self: flex-end;
+    top: 40px;
+  }
+
+  .circle_one_more {
+    height: 300px;
+    width: 490px;
+  }
+
+  .backgrounColor_one_more_thing {
+    height: 325px;
+  }
+
+  .one_more_thing {
+    padding: 10px;
+  }
+
+  .BlocTitre {
+    position: relative;
+    top: 80px;
+  }
+
+  .bloc_principale_consulting {
+    margin-top: 200px;
+  }
+
+  .titre_bloc_formation {
+    font: normal normal bold 14px/17px Metropolis;
+  }
+
+  .description_bloc {
+    width: auto;
+  }
+
+  .logos_clients4 .blocAdopt {
+    margin-top: 0px;
+  }
+
+  .cercleConsultingFormation,
+  .cercleConsultingAudit,
+  .cercleConsultingVie {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ImgConsultingFormation {
+    position: relative;
+    right: 0;
+    margin: 60px auto;
+  }
+
+  .TitreBloc {
+    font-size: 1.8625rem;
+    margin-bottom: 10px;
+  }
+
+  .logos_omts,
+  .logos_omts2,
+  .logos_omts3,
+  .logos_omts4 {
+    height: 60px;
+    margin: 0 20px;
+  }
+
+  #logos_clients2 {
+    height: 10px;
+  }
+
+  .logos_partenaire,
+  .logos_partenaire2,
+  .logos_partenaire3,
+  .logos_partenaire4 {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .titre_section_two_officiel_poles:before {
+    position: absolute;
+    top: 0;
+  }
+
+  .TitreBloc {
+    margin-bottom: 56px;
+  }
+
+  .blocAdopt {
+    padding: 15px 0 15px;
+  }
+
+  .ImgSprintDesign {
+    position: relative;
+    left: 0px;
+  }
+
+  .BlocTitre {
+    // height: 93px;
+    width: 238px;
+    position: relative;
+    top: 11px;
+    // padding: 20px 0 80px;
+    left: 0;
+  }
+
+  .bloc_principale_consulting {
+    margin-top: 24px;
+  }
+
+  .logos_clients,
+  .logos_clients2,
+  .logos_clients3,
+  .logos_clients4 {
+    margin: 0 20px;
+    height: 50px;
+  }
+
+  .text_bloc_principale_consulting {
+    margin: 0 auto;
+  }
+
+  .box_subSide {
+    position: relative;
+    bottom: 20px;
+  }
+
+  .ImgSolutionCRMSide,
+  .ImgSolutionSUBSide,
+  .ImgSolutionSalesforceSide,
+  .ImgSprintDesign,
+  .ImgSprintDesign {
+    margin: 47px auto;
+    right: 0;
+    width: 202px;
+    background-position: center;
+    background-size: 100%;
+  }
+  .blocPartenaires {
+    margin-top: 60px;
+  }
+
+  .box_audit {
+    position: relative;
+    top: 70px;
+    left: 80px;
+  }
+
+  .ImgSolutionCRMSide {
+    position: relative;
+    left: 0;
+  }
+
+  .container_box_vie {
+    margin: 0 auto;
+    width: auto;
+    padding-right: 50px;
+    height: fit-content;
+  }
+
+  .text_bloc_principale_consulting {
+    font: normal normal normal 0.9rem Metropolis;
+  }
+
+  .description_bloc {
+    font: normal normal normal 0.4375rem metropolis;
+  }
+
+  .ImgConsultingAudit {
+    margin: 68px auto;
+    justify-content: center;
+  }
+
+  .ImgConsultingFormation,
+  .ImgConsultingVie,
+  .ImgConsultingAudit,
+  .ImgSprintDesign,
+  .ImgStudioDesign {
+    height: 124px;
+    width: 202px;
+    margin-top: 42px;
+  }
+
+  .ImgSprintDesign,
+  .ImgStudioDesign {
+    height: 112px;
+  }
+
+  @media screen and (max-width: 540px) {
+    #blocAdopt {
+      margin-top: 1px;
+    }
+
+    .circle_one_more {
+      height: 180px;
+      width: 290px;
+    }
+
+    .box_audit,
+    .box_consulting,
+    .blocApp,
+    .box_Vie {
+      padding: 10px !important;
+    }
+
+    .backgrounColor_one_more_thing {
+      height: 200px;
+    }
+
+    .BlocTitre {
+      // height: 166px;
+      width: 300px;
+    }
+
+    .titre_section_two_officiel_poles {
+      height: 140px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    .BlocTitre {
+      width: 300px;
+      position: relative;
+      top: 0px;
+    }
+
+    .titre_section_two_officiel_poles {
+      height: 100px;
+      display: flex;
+      align-items: center;
+    }
+    .boxPartenaire_titles {
+      height: fit-content !important;
+    }
+
+    // .description_partenaires {
+    //   margin: 20px auto 30px !important;
+    // }
+  }
+
+  @media screen and (max-width: 280px) {
+    .titre_section_two_officiel_poles:before {
+      position: relative;
+      top: 12px;
+    }
+
+    .BlocTitre {
+      height: auto;
+      width: 208px;
+      position: relative;
+      top: -80px;
+    }
+
+    #BlocTitreSolution {
+      position: relative;
+      top: -20px;
+    }
+
+    .titre_section_two_officiel_poles {
+      margin: -22px auto;
+      flex-direction: column;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////
+
+//pole partenaires
+
+.bloc_img_partenaires {
+  @include backgroundFullSize(
+    url("/assets/img/pole-partenaires-jl-consulting-handshak.jpg"),
+    center,
+    no-repeat,
+    100%,
+    initial
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 186px 0 0px;
+}
+
+.boxPartenaire_titles {
+  width: 975px;
+  height: auto;
+  margin: 0 auto;
+  background: #4a80a4;
+  position: relative;
+  top: 100px;
+  border-radius: 17px;
+  padding-bottom: 50px;
+}
+
+.Bloc_partenaires_container {
+  width: fit-content;
+  margin: 82px auto; //responsive
+}
+
+.bloc_img_partenaires {
+  display: flex;
+  margin-bottom: 197px;
+}
+
+.description_partenaires {
+  text-align: center;
+  width: 80%;
+  margin: 220px auto 150px;
+  font: normal normal 300 1.5625rem/30px Metropolis;
+  letter-spacing: 0px;
+  color: #3a3a3a;
+  font-weight: 500;
+}
+
+.ImgPartenaires {
+  height: 573px;
+  width: 940px; //responsive
+  display: flex;
+  justify-content: flex-end;
+  object-fit: cover;
+  object-position: left;
+}
+
+.contenuBloc_partenaires {
+  padding: 60px 72px;
+  position: absolute;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0px 3px 33px #0000001a;
+}
+
+.Bloc_description_partenaires {
+  width: 612px; //a modifier pour le responsive
+  text-align: center;
+  text-align: center;
+  font: normal normal normal 1.4375rem Metropolis;
+  letter-spacing: 0px;
+  color: #3f3f3f;
+}
+
+.bloc_img_partenaires_one {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-bottom: 197px;
+}
+
+#box_censhare,
+#box_ringover {
+  margin-left: -250px;
+  margin-top: -50px;
+}
+
+#box_lobster,
+#box_salesforces {
+  margin-right: -250px;
+  margin-bottom: -50px;
+}
+
+.bloc_img_partenaires_two {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 197px;
+}
+
+.bloc_img_partenaires_three {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 197px;
+}
+
+.bloc_img_partenaires_four {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 197px;
+}
+
+.tilte_bloc_partenaire {
+  text-align: center;
+  font: normal normal bold 4.375rem Metropolis;
+  letter-spacing: 0px;
+  color: #3f3f3f;
+}
+
+@media screen and (max-width: 1470px) {
+  .ImgPartenaires {
+    width: 700px;
+    height: 500px;
+  }
+
+  .contenuBloc_partenaires {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .ImgPartenaires {
+    width: 500px;
+    height: 400px;
+  }
+
+  .contenuBloc_partenaires {
+    padding: 20px;
+  }
+
+  .Bloc_description_partenaires {
+    width: 400px;
+  }
+
+  .boxPartenaire_titles {
+    width: 775px;
+    // height: 284px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #box_censhare,
+  #box_ringover {
+    margin-left: -100px;
+  }
+
+  .boxPartenaire_titles {
+    width: 375px;
+    height: 184px;
+    margin: 0px 30px;
+  }
+
+  #box_lobster,
+  #box_salesforces {
+    margin-right: -100px;
+  }
+
+  .ImgPartenaires {
+    width: 180px;
+    height: 140px;
+  }
+
+  .contenuBloc_partenaires {
+    padding: 10px;
+  }
+
+  .Bloc_description_partenaires {
+    width: 200px;
+    font-size: 0.5rem;
+  }
+
+  .bloc_img_partenaires_one,
+  .bloc_img_partenaires_two,
+  .bloc_img_partenaires_three,
+  .bloc_img_partenaires_four {
+    margin-bottom: 68px;
+  }
+
+  .tilte_bloc_partenaire {
+    font-size: 0.875rem;
+  }
+
+  ///page Salesforces !
+
+  .logoKeolis {
+    margin-top: 15px;
+  }
+
+  .logoAycom,
+  .logo_manMachine {
+    margin-top: 10px;
+  }
+
+  .logoBB {
+    margin-top: -10px;
+  }
+
+  .TitreBloc {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  //fin
+}
+
+@media screen and (max-width: 450px) {
+}
+
+@media screen and (max-width: 380px) {
+  .Bloc_description_partenaires {
+    width: 180px;
+    font-size: 0.5rem;
+  }
+
+  .bloc_img_partenaires_two {
+    margin-bottom: 150px;
+  }
+
+  #box_censhare,
+  #box_ringover {
+    margin-left: -50px;
+  }
+
+  #box_lobster,
+  #box_salesforces {
+    margin-right: -0px;
+  }
+
+  .boxPartenaire_titles {
+    width: 275px;
+    height: 134px;
+    margin: 0px 30px;
+    border-radius: 6px;
+    position: relative;
+    top: 30px !important;
+  }
+
+  .bloc_img_partenaires {
+    margin-bottom: 139px;
+  }
+}

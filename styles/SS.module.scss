@@ -1,0 +1,231 @@
+@import "./mixins";
+
+.fondSS {
+  @include backgroundFullSize(
+    url("/assets/img/succes_stories/business-women-signature-document.jpg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  width: 100%;
+  height: 648px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backgroundFondSS {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 130px;
+  position: absolute;
+  opacity: 0.5;
+  height: 80vh;
+}
+
+.title_SS {
+  font: var(--unnamed-font-style-normal) normal 900 90px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal 900 90px Metropolis;
+  color: #3f3f3f;
+  opacity: 1;
+  margin-top: 250px; //a modifier en responsive
+  z-index: 1;
+}
+
+.container_btn_SS {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  padding: 0 191px;
+  width: 100%;
+  //   border: solid 2px red;
+}
+
+.button_succes_stories {
+  width: 165px; //a cha,ger pour le responsive
+  margin: 0 63px; //a cha,ger pour le responsive
+  border-radius: 50%;
+}
+
+.Clic_button_SS {
+  margin-top: 121px; //a cha,ger pour le responsive
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 91px; //a cha,ger pour le responsive
+  //   border: solid 2px;
+}
+
+.title_click {
+  font: var(--unnamed-font-style-normal) normal normal 49px DK Keswick; //a cha,ger pour le responsive
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal normal 49px DK Keswick; //a cha,ger pour le responsive
+  letter-spacing: 0px;
+  color: #3a3a3a;
+  opacity: 1;
+  width: 343px; //a cha,ger pour le responsive
+}
+
+.Section_clarins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.BlocClarins {
+  padding: 140px 58px; //a modifier pour le responsive
+  border-radius: 14px;
+  box-shadow: 0px 3px 25px #00000012;
+  background-color: white;
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.ImgClarins {
+  // height: 101px;
+  width: 382px; //a modifier pour le responsive
+  margin: 0 97px 0 0; //a modifier pour le responsive
+}
+
+.description_clarins {
+  font: var(--unnamed-font-style-normal) normal normal 21px Metropolis; //a modifier pour le responsive
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal normal 21px Metropolis; //a modifier pour le responsive
+  letter-spacing: 0px;
+  color: #434345;
+  width: 611px;
+}
+
+#BB {
+  width: 107px;
+  margin: 6px 48px;
+}
+
+.section_logos_entreprises {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1635px;
+  margin: 0 auto 56px;
+}
+
+.Logo {
+  width: 177px;
+  margin: 6px 48px;
+  // border: solid 2px red;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1644px) {
+  .section_logos_entreprises {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .btn_responsive {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1316px) {
+  .BlocClarins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .btn_responsive {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -30px;
+  }
+
+  .ImgClarins {
+    margin: 0px 0px 50px 0px;
+  }
+
+  .description_clarins {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .btn_responsive {
+    margin: 0 -10px;
+    // border: solid 2px red;
+    top: -30px;
+  }
+
+  .button_succes_stories {
+    // border: solid 2px yellow;
+    display: block;
+    margin: 0 0px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container_btn_SS {
+    // border: solid 2px red;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title_SS {
+    font-size: 2.1rem;
+  }
+
+  .title_click {
+    font-size: 1.3rem;
+  }
+
+  .Clic_button_SS {
+    margin: 30px auto;
+    text-align: center;
+    width: 100% !important;
+    padding: 10px 30px;
+  }
+
+  .ImgClarins {
+    width: 200px;
+  }
+  .description_clarins {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn_responsive {
+    height: 80px;
+    width: 80px;
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .button_succes_stories {
+    width: 50px;
+  }
+
+  .BlocClarins {
+    width: 200px;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "jl",
+  "version": "1.0.0",
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "dependencies": {
+    "image-webpack-loader": "^7.0.1",
+    "next": "^10.2.3",
+    "next-images": "^1.7.0",
+    "react-alice-carousel": "^2.5.1",
+    "react-fullscreen-slideshow": "^1.2.0",
+    "react-responsive-carousel": "^3.2.18",
+    "react-scroll": "^1.8.2",
+    "sass": "^1.34.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "url-loader": "^4.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC"
+}

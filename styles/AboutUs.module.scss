@@ -1,0 +1,284 @@
+@import "./mixins";
+
+.BackgroundImg {
+  @include backgroundFullSize(
+    url("/assets/img/AboutUsImg/group-diverse-people-is-using-digital-devices_53876-31168.jpg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  width: 100%;
+  height: 896px;
+}
+
+.backgroundColor_img {
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+.TitleValues {
+  font: var(--unnamed-font-style-normal) normal 900 4.3rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal 900 4.3rem Metropolis;
+  font-size: calc(70 * var(--res)) !important;
+  color: #3f3f3f;
+}
+
+.ContainerV {
+  width: 100%;
+  padding: 75px;
+}
+
+.BlocValeurs {
+  display: flex;
+  width: 100%;
+  padding: 100px;
+  color: #ffffff;
+  // border: solid 2px red;
+}
+
+.descriptionEngagements {
+  font: var(--unnamed-font-style-normal) normal normal 1.25rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font: normal normal normal 1.25rem Metropolis;
+  color: #3a3a3a;
+}
+
+.ES,
+.EPE {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ImgValues {
+  height: auto;
+  width: 41vw;
+}
+
+.ImgEngagements {
+  height: auto;
+  width: 41vw;
+  margin: -50px;
+}
+
+.ImgValues:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+//bloc 2
+
+.teams_title {
+  font: var(--unnamed-font-style-normal) normal 900 4.3rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal 900 4.3rem Metropolis;
+  color: #3f3f3f;
+  font-size: calc(70 * var(--res)) !important;
+}
+
+.Teams {
+  width: 100%;
+  // border: solid 2px blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 104px;
+  padding-top: 180px;
+}
+
+.h1 {
+  font: normal normal bold 1.875rem Metropolis;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  text-align: center;
+}
+
+.p {
+  text-align: center;
+  font: normal normal normal 20px/33px Metropolis;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.ImgTeams:before {
+  content: "Hello";
+  z-index: 100;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+//Positonnement des cartes equipes
+
+.Box2img {
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ImgPositionTeams2 {
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+
+.ImgPositionTeams3 {
+  margin-top: 50px;
+}
+
+.ImgPositionTeams4 {
+  margin-top: 120px;
+}
+
+.ImgPositionTeams5 {
+  margin-top: -100px;
+}
+
+.ImgPositionTeams6 {
+  margin-bottom: 100px;
+}
+
+.ImgPositionTeams7 {
+  margin-top: -40px;
+}
+
+.ImgPositionTeams8 {
+  margin-top: 50px;
+}
+
+.ImgPositionTeams9 {
+  margin-top: 30px;
+}
+
+.ImgPositionTeams10 {
+  margin-top: -20px;
+}
+
+.ImgPositionTeams12 {
+  margin-top: 20px;
+}
+
+.Circles {
+  width: 15%;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 10px #000;
+  position: absolute;
+  z-index: -1;
+}
+
+.Circles:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.TitreImgTeam {
+  position: absolute;
+  font: var(--unnamed-font-style-normal) normal bold 3.125rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal bold 3.125rem Metropolis;
+  color: #0e5686;
+}
+
+@media screen and (max-width: 1024px) {
+  .BlocValeurs {
+    padding: 40px 0px;
+  }
+
+  .ImgPositionTeams6 {
+    margin-top: 100px;
+  }
+
+  .ImgPositionTeams5 {
+    margin-top: 10px;
+  }
+
+  .ImgPositionTeams8 {
+    margin-bottom: 150px;
+  }
+
+  .ImgPositionTeams9 {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ContainerV,
+  .BlocValeurs {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .TitleValues {
+    font-size: 2.8rem !important;
+    margin-bottom: 20px;
+  }
+
+  .ImgEngagements {
+    height: auto;
+    width: 41vw;
+    margin: 0;
+  }
+
+  .ImgEngagements,
+  .ImgValues {
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ImgPositionTeams8 {
+    margin-bottom: 50px;
+  }
+
+  .ImgPositionTeams5 {
+    margin-top: 100px;
+  }
+
+  .TitreImgTeam {
+    margin-right: 20px;
+  }
+
+  #Ally {
+    margin-top: 69px !important;
+  }
+
+  #Jihad {
+    margin-top: 69px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .ImgPositionTeams6,
+  .ImgPositionTeams2,
+  .ImgPositionTeams3,
+  .ImgPositionTeams4,
+  .ImgPositionTeams4,
+  .ImgPositionTeams5,
+  .ImgPositionTeams7,
+  .ImgPositionTeams8,
+  .ImgPositionTeams9,
+  .ImgPositionTeams10,
+  .ImgPositionTeams12,
+  .ImgTeams {
+    height: 253px !important;
+    width: 200px !important; //a corriger
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .TitreImgTeam {
+    font-size: 2rem;
+  }
+}

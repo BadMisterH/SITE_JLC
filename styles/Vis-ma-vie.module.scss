@@ -1,0 +1,332 @@
+@import "./mixins";
+
+.VMVImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/Vis-Ma-Vie/vis-ma-vie-jl-consulting_dark.jpg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VMVImg:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.TitileVMVImg {
+  font: normal normal 900 7.8125rem Metropolis;
+  color: #ffffff;
+  position: absolute;
+  font-size: calc(125 * var(--res)) !important;
+  width: 215px;
+}
+
+.section_two {
+  width: 100%;
+  background-color: #0f5584;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 109px 0px; // a modifier pour le responsive
+  margin-bottom: 53px;
+}
+
+.ul {
+  color: white;
+  list-style-type: none;
+}
+
+.title_VMV_section_two {
+  text-align: center;
+  font: normal normal 900 4.375rem Metropolis;
+  color: #ffffff;
+  // width: 1014px; //a modifier pour le responsive
+  margin-bottom: 81px;
+  // font-size: calc(70 * var(--res)) !important;
+}
+
+.description_section_two,
+.ListeVMV {
+  text-align: center;
+  font: normal normal 300 1.4375rem Metropolis;
+  letter-spacing: 0px;
+  color: #ffffff;
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: calc(4375rem * var(--res)) !important;
+}
+
+.ListeVMV {
+  width: 404px;
+}
+
+//components section 3
+
+.Title_section_three {
+  text-align: center;
+  font: normal normal 900 4.375rem Metropolis;
+  color: #4a80a4;
+  margin: 56px auto 0px; //a modifier pour le responsive
+  padding: 0px 20px;
+}
+
+.container_section_three {
+  width: 70%;
+  margin: 81px auto;
+  // border: solid 2px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Container_list_vmv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blocVMV_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 42px 30px;
+}
+
+.ImgVMV {
+  width: 148px;
+  height: 148px;
+  align-self: center;
+  filter: brightness(0) invert(1);
+}
+
+.bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 71px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 3px 20px #00000012;
+  padding: 25px 30px;
+}
+
+.container_icones_bloc_section_three {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 82px;
+}
+
+#blocAlterner {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.container_section_three_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 582px; //a modifier pour le responsive
+}
+
+.liste_bloc_section_three {
+  list-style: none;
+  margin: 10px auto;
+  text-align: left;
+  font: normal normal normal 1.4375rem/30px Metropolis;
+  letter-spacing: 0px;
+  color: #434345;
+}
+
+.liste_num_bloc_section_three {
+  text-align: center;
+  font: normal normal normal 1.4375rem/30px Metropolis;
+  letter-spacing: 0px;
+  color: #434345;
+}
+
+.paragraph_restituer {
+  // padding: 0 50px;
+  text-align: center;
+  width: 582px; //a modifier pour le responsive
+  font: normal normal normal 1.4375rem/30px Metropolis;
+  letter-spacing: 0px;
+  color: #434345;
+}
+
+.icones_section_three {
+  width: 314px;
+  height: 276px;
+  position: absolute;
+}
+
+#Position_icone_A {
+  margin-left: -200px;
+}
+
+#Position_icone_B {
+  margin-left: 250px;
+}
+
+#blocAdopt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_manMachine {
+  width: 297px;
+  height: 52px;
+  margin: -80px 41px;
+  background-position-y: center;
+  background: url("/assets/img/logosClients/20_man-machine.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo_NetSquare {
+  width: 297px;
+  height: 92px;
+  background-position-y: center;
+  margin: 0 41px;
+  background: url("/assets/img/logosClients/35_Netsquare.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.VisVis_ma_vie_section_three {
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal 900 3rem/56px Metropolis;
+  letter-spacing: 0px;
+  color: #cfe3f9;
+}
+
+@media screen and (max-width: 1024px) {
+  .TitileVMVImg {
+    font-size: 2.3rem !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Title_section_three {
+    font-size: 3rem;
+  }
+
+  #Position_icone_A {
+    margin-left: -220px;
+    height: 200px;
+  }
+
+  #Position_icone_B {
+    margin-left: 175px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .paragraph_restituer,
+  .container_section_three_description {
+    width: auto;
+  }
+
+  .logo_manMachine {
+    margin-top: -45px;
+  }
+
+  #section_one {
+    margin-bottom: 100px;
+  }
+
+  .icones_section_three {
+    height: 100px;
+    width: 100px;
+  }
+  #Position_icone_A {
+    margin-left: -37px;
+    margin-right: 100;
+    margin-top: 41px;
+    display: none;
+  }
+
+  #Position_icone_B {
+    margin-left: 47px;
+    margin-top: -44px;
+    display: none;
+  }
+
+  .title_VMV_section_two {
+    width: auto;
+    font-size: 2.6rem;
+  }
+
+  .logo_manMachine {
+    margin-top: -65px;
+  }
+
+  .VisVis_ma_vie_section_three {
+    font-size: 2rem;
+  }
+
+  .container_section_three {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .paragraph_restituer,
+  .liste_bloc_section_three,
+  .liste_num_bloc_section_three {
+    font-size: 1rem;
+  }
+  .blocVMV_ {
+    margin: 0px;
+  }
+
+  .Title_section_three {
+    font-size: 2rem;
+  }
+
+  .ListeVMV {
+    width: auto;
+  }
+  #VMV {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #Position_icone_A {
+    margin-left: 0px;
+    margin-top: 81px;
+  }
+
+  #Position_icone_B {
+    margin-left: 0px;
+    margin-top: -54px;
+  }
+
+  .ListeVMV {
+    width: 200px;
+  }
+
+  .VisVis_ma_vie_section_three {
+    font-size: 1.6rem;
+  }
+}

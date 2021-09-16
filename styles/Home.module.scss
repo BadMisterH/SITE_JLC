@@ -1,0 +1,880 @@
+@import "./mixins";
+
+.div {
+  scroll-behavior: smooth;
+}
+
+.liste {
+  width: 100%;
+  bottom: 100px;
+  @include flexbox(flex, initial, flex-end, initial);
+  position: fixed;
+  display: none;
+}
+
+.Bloc_two_projet_section {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin: 0px auto 0;
+  flex-direction: column;
+}
+
+.sectionTwo {
+  max-width: auto;
+  // display: grid;
+  margin: auto;
+  height: auto;
+  width: 100% !important;
+  // grid-template-columns: auto auto;
+}
+
+.section_Two_container_one {
+  width: 100%;
+  display: flex;
+  // border: solid 2px black;
+}
+
+.section_Two_container_two {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  // width: fit-content;
+}
+
+.section_two_bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  width: 46vw;
+  height: 52vh; //52vh
+  cursor: pointer;
+  flex-direction: "column";
+}
+
+.titre_section_two_officiel {
+  font-weight: 400;
+  font: normal normal normal 10.25rem White Buttell;
+  // margin-left: 150px;
+}
+
+.sectionThree {
+  width: 100%;
+  height: 557px;
+  background: url("/assets/img/fond_JL-Consulting_logo_blanc_fond_bleu.svg");
+  // background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 100%;
+}
+
+.sectionFour {
+  width: 100%;
+  background-color: #fffbfb;
+}
+
+.container_Four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.box_Four {
+  margin: 0 20px;
+  display: flex;
+  padding: 55px 40px;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 38px #a1a1a159;
+  border-radius: 12px;
+
+  &:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.05);
+  }
+}
+
+.titre_articles {
+  font: var(--unnamed-font-style-normal) normal bold 30px/53px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal bold 30px/53px Metropolis;
+  letter-spacing: 0px;
+  color: #3f3f3f;
+  text-transform: uppercase;
+}
+
+.description_four {
+  width: 437px;
+  font: var(--unnamed-font-style-normal) normal 100 17px/20px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 100 17px/20px Metropolis;
+  letter-spacing: 0px;
+  color: #3f3f3f;
+}
+
+.sectionImg {
+  width: 54vw;
+  height: 52vh;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.figure {
+  position: relative;
+  @include flexbox(flex, initial, initial, initial);
+  width: 100%;
+  animation: 20s slider linear infinite;
+}
+
+.rotate {
+  &:hover {
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+  }
+}
+
+// @keyframes slider {
+//   0% {
+//     transform: translate(-100%, 0%);
+//   }
+//   100% {
+//     transform: translate(0%, 0%);
+//   }
+// }
+
+.navigation {
+  width: 100%;
+  // padding: 15px 30px 15px 30px;
+  height: 106px;
+  flex-wrap: wrap;
+  top: 0;
+  // background: rgb(0, 87, 132);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(0, 87, 132, 1) 0%,
+  //   rgba(147, 180, 196, 0.5718662464985995) 57%,
+  //   rgba(168, 212, 226, 1) 100%
+  // );
+  background: rgb(0, 87, 132);
+  background: linear-gradient(
+    96deg,
+    rgba(0, 87, 132, 1) 23%,
+    rgba(52, 167, 208, 1) 65%,
+    rgba(66, 188, 227, 1) 100%
+  );
+  z-index: 5;
+  position: fixed;
+  @include flexbox(flex, center, flex-start, initial);
+}
+
+.titreSection {
+  letter-spacing: 10.95px;
+  text-align: "center";
+  letter-spacing: 5.95;
+  padding: 82px 0 82px;
+  color: "#3A3A3A";
+  font-size: calc(80 * var(--res));
+  font: var(--unnamed-font-style-normal) normal 900 70px Metropolis;
+  text-align: center;
+  font: normal normal 900 70px Metropolis;
+  letter-spacing: 5.95px;
+  color: #3a3a3a;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+}
+
+.ul {
+  @include flexbox(flex, space-between, flex-end, initial);
+  display: flex;
+  width: 100%;
+  height: 53px;
+  // position: relative;
+  // right: 12%;
+  flex-wrap: wrap;
+  position: fixed;
+  margin-left: -280px;
+  top: 0;
+  align-items: center;
+  height: 104px;
+}
+
+.ulMobile {
+  @include flexbox(flex, flex-start, center, column);
+  justify-content: space-between;
+  padding-top: 100px;
+  margin: -24px 36px;
+}
+
+.PoleListe {
+  text-align: left;
+  font: normal normal 300 13px Metropolis;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin: 13px;
+}
+
+.trait {
+  border: solid 0.12px white;
+  width: 100%;
+  margin: 20px 0;
+  opacity: 0.5;
+}
+
+.li {
+  padding: 0 26.5px 0 26.5px;
+  list-style-type: none;
+  @include Font(("Metropolis", sans-serif), #ffffff, 1.2rem, 500, initial);
+  cursor: pointer;
+  &:hover {
+    color: #ffc400;
+  }
+}
+
+// .burger{
+//   height: 50px;
+//   cursor: pointer;
+//   width: 50px;
+//   background : url("../images/burger.svg");
+//   background-repeat : no-repeat;
+//   opacity: 0;
+// }
+
+.projet {
+  text-transform: uppercase;
+  width: 178px;
+  height: 44px;
+  border-radius: 30px;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background-color: white;
+  }
+  font: var(--unnamed-font-style-normal) normal bold 17px/20px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal bold 17px/20px Metropolis;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: auto;
+  // background : blue;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+  padding-top: 20px;
+  width: 100%;
+  // border : solid 2px black
+}
+
+.listeFooter {
+  list-style-type: none;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300)
+    1rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 300 1rem Metropolis;
+  letter-spacing: 0px;
+  color: #005784;
+  &:hover {
+    color: #ffc400;
+  }
+}
+
+.containerFooter {
+  display: flex;
+  // border : solid 2px black;
+  width: fit-content;
+  margin: 0 auto;
+  // padding : 0 50% 0 50%;
+}
+
+.legend {
+  margin: auto;
+  width: fit-content;
+  font-size: 30px;
+  margin-top: -17px;
+  margin-left: 10px;
+}
+
+.contact,
+.address,
+.location {
+  text-align: center;
+}
+
+.textarea {
+  width: auto;
+  height: 152px;
+}
+
+.input,
+.textarea,
+.select {
+  border: none;
+}
+
+.formFooter {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.nav {
+  height: 80vh;
+  width: 500px;
+  background: red;
+  position: absolute;
+  transform: translate(-100%, 0%);
+  transition-duration: 500ms;
+  transition: transform 0.3s ease-in-out;
+  animation-duration: 0.2s;
+}
+
+.formFooter,
+.elementsFooter {
+  margin: 20px 60px 0 60px;
+  position: relative;
+  @include Font(("Metropolis", sans-serif), #0e5686, initial, 500, 1.5);
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus,
+.button:focus {
+  outline: none;
+}
+
+.footerResponsive_row {
+  display: flex;
+}
+
+.title_footer {
+  font: var(--unnamed-font-style-normal) normal bold 18px/22px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font: normal normal bold 18px/22px Metropolis; //a modifier
+  letter-spacing: 0px;
+  color: #005784;
+}
+
+.sectionLogoEntreprise {
+  height: auto;
+  width: 100%; //900px
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto 82px auto;
+}
+
+.sectionLogoEntreprise:before,
+.sectionLogoEntreprise::after {
+  content: " ";
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  z-index: 2;
+}
+
+.sectionLogoEntreprise:before {
+  top: 0;
+  left: 0;
+}
+
+.sectionLogoEntreprise {
+  top: 0;
+  left: 0;
+  transform: rotateZ(360deg);
+}
+
+.sectionLogoEntreprise .containerLogoEntreprise {
+  display: flex;
+  width: calc(350px * 14); // a mofifié par rapport au nombre de logo
+  animation: sliderLogo 30s infinite linear;
+  &:hover {
+    animation-play-state: paused; //probleme
+  }
+}
+
+.imgSlider {
+  height: 52px;
+  width: auto;
+}
+
+.sectionLogoEntreprise .logoEntreprise {
+  height: fit-content;
+  margin: 0px 81px 0px 81px;
+  &:hover {
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.05);
+    cursor: pointer;
+    animation-play-state: paused;
+  }
+}
+
+.titre_section_two_officiel:before {
+  content: " pôle ";
+  font: var(--unnamed-font-style-normal) normal 100 133px/160px Metropolis;
+  text-align: left;
+  font: normal normal 100 133px/160px Metropolis; //a modifier
+  letter-spacing: -7.98px;
+  opacity: 0.2;
+  position: absolute;
+  margin-left: -45px;
+  margin-top: -70px;
+  display: flex;
+}
+
+.description_section_two {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300)
+    20px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 300 20px Metropolis;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.titre_articles {
+  margin-top: 10px;
+}
+
+.suite {
+  font: var(--unnamed-font-style-normal) normal bold 21px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal bold 21px Metropolis;
+  letter-spacing: 0px;
+  color: #0e5686;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+.logo {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 70px;
+  height: 49px;
+}
+
+.ElementsPartenaires {
+  display: flex;
+  flex-wrap: wrap;
+  width: 145px;
+}
+
+.titrePartenaires {
+  font: var(--unnamed-font-style-normal) normal bold 18px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font: normal normal bold 18px Metropolis; //a modifier
+  letter-spacing: 0px;
+  color: #005784;
+  margin-top: 22px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+}
+
+// .txt {
+//   width: 50px;5
+//   height: 50px;
+//   background: #999;
+//   border-radius: 50px;
+//   display: inline-block;
+//   margin: 0 24.7px;
+//   transition: all 0.2s ease-out;
+// }
+
+// .span {
+//   float: left;
+//   width: 50%;
+// }
+
+#StudioDesign {
+  white-space: nowrap;
+  margin-left: 0px;
+  width: 35vw;
+  // font-size: 9.375rem;
+}
+
+@keyframes sliderLogo {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.button_C {
+  box-shadow: 0px 3px 3px #00000029;
+  background-color: white;
+  text-align: center;
+  padding: 16px 97px;
+  letter-spacing: 0px;
+  border: solid 0px;
+  font-size: 1.875rem;
+  cursor: pointer;
+  border-radius: 30px;
+  &:hover {
+    animation-duration: 1s;
+    transform: scale(1.03);
+  }
+}
+
+.Img_box_four {
+  height: 269px;
+  width: 437px;
+  object-fit: "cover";
+  object-position: "center";
+  // margin-top: 55px;
+  margin-bottom: 27px;
+}
+
+.containerPole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerSectionTwo {
+  position: relative;
+  bottom: 570px;
+  margin-top: 350px;
+  height: 0;
+}
+
+@media screen and (max-width: "1880px") {
+  .titre_section_two_officiel {
+    font: normal normal normal 7rem White Buttell;
+  }
+
+  .sectionFour {
+    margin-bottom: 66px;
+  }
+
+  .box_Four {
+    margin-bottom: 30px;
+  }
+}
+
+.li_Mobile {
+  color: white;
+  list-style-type: none;
+}
+
+@media screen and (max-width: "1280px") {
+  .titre_section_two_officiel {
+    font: normal normal normal 5.25rem White Buttell;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .description_four {
+    width: auto;
+  }
+
+  .containerSectionTwo {
+    position: relative;
+    bottom: 450px;
+  }
+
+  .projetMobile_btn {
+    text-transform: uppercase;
+    width: 178px;
+    height: 44px;
+    border-radius: 30px;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    &:hover {
+      background-color: white;
+    }
+    font: var(--unnamed-font-style-normal) normal bold 17px Metropolis;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal bold 17px Metropolis;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .btn_menu_projet_mobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .navigation {
+    height: 104px;
+  }
+
+  .li,
+  .projet {
+    display: block;
+  }
+
+  .titre_section_two_officiel {
+    font-size: calc(70 * var(--res)) !important;
+  }
+
+  .container_Four {
+    margin: 0 250px;
+    box-shadow: 0px 3px 38px #a1a1a159;
+  }
+
+  .formFooter,
+  .elementsFooter {
+    margin: 30px 10px;
+    position: relative;
+    @include Font(("Metropolis", sans-serif), #0e5686, initial, 500, 1.5);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button_C {
+    // display: flex;
+    // flex-direction: column !important;
+    padding: 5px 30px;
+  }
+
+  .li,
+  .projet {
+    display: none;
+  }
+
+  .navigation {
+    height: 50px;
+  }
+
+  .titre_section_two_officiel:before {
+    font: normal normal 80 83px Metropolis;
+  }
+
+  .description_section_two {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Bloc_two_projet_section {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0px auto 0;
+    flex-direction: column;
+  }
+
+  .containerSectionTwo {
+    position: relative;
+    bottom: 370px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .containerFooter {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .container_Four {
+    margin: 0;
+  }
+
+  .sectionLogoEntreprise .logoEntreprise {
+    margin: 0px 20px;
+  }
+
+  .projet {
+    display: none;
+  }
+
+  .sectionImg {
+    display: flex;
+    // width: 100%;
+    align-self: center;
+  }
+
+  .section_Two_container_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #StudioDesign {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .box_Four {
+    padding: 40px 0px;
+    margin: 20px;
+    height: 245px;
+    width: 218px;
+  }
+
+  .containerSectionTwo {
+    position: relative;
+    bottom: 600px;
+    margin-top: 300px;
+  }
+
+  .listeFooter {
+    text-align: center;
+  }
+
+  .footer {
+    background: #eeeeee;
+  }
+
+  .footerResponsive_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #StudioDesign {
+    position: inherit;
+    // margin-left: 135px;
+  }
+
+  .container_Four {
+    padding-bottom: 50px;
+    box-shadow: none;
+  }
+
+  .titre_articles {
+    font: normal normal bold 11px Metropolis;
+    letter-spacing: 0px;
+    color: #3f3f3f;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-left: 27px;
+  }
+
+  .button_C {
+    font: normal normal medium 7px Metropolis;
+    padding: 4px 30px;
+    font-size: 7px !important;
+  }
+
+  .sectionThree {
+    background-position: contain;
+    height: 508px;
+  }
+
+  .section_Two_container_one,
+  .section_Two_container_two,
+  .section_Two_container_one {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section_two_bloc,
+  .sectionImg {
+    width: 100%;
+    height: 106px;
+  }
+
+  .section_two_bloc {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 106px;
+  }
+
+  .sectionImg {
+    z-index: 2;
+    opacity: 0.18;
+  }
+
+  .projet {
+    display: none;
+  }
+
+  .Img_box_four {
+    position: relative;
+    margin: 0 auto;
+    height: 100px;
+    width: 163px;
+  }
+
+  .box_Four {
+    padding: 33 0 24px;
+  }
+
+  .description_four {
+    position: relative;
+    font-size: 10px;
+    width: 163px;
+    margin: 0 auto;
+  }
+  .suite {
+    font: normal normal bold 7px/16px Metropolis;
+    letter-spacing: 0px;
+    color: #0e5686;
+    margin-left: 27px;
+  }
+
+  .titreSection {
+    font: normal normal 900 22px/26px Metropolis;
+    letter-spacing: 1.87px;
+    color: #3a3a3a;
+    padding: 30px 0 30px;
+    width: 215px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .containerLogoEntreprise {
+    height: 26px;
+  }
+
+  .imgSlider {
+    height: 26px;
+  }
+
+  .sectionLogoEntreprise {
+    margin: 0px auto 36px auto;
+  }
+  .titre_section_two_officiel:before {
+    font: var(--unnamed-font-style-normal) normal 100 2.43rem Metropolis;
+    font: normal normal 100 2.43rem Metropolis;
+    position: absolute;
+    bottom: 49px;
+    margin-left: -22px;
+  }
+}

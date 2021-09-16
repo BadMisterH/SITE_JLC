@@ -1,0 +1,50 @@
+.Container {
+  width: 80%;
+  margin: 0 auto;
+  // border: solid 2px red;
+  display: flex;
+}
+
+.Img {
+  width: 328px;
+  height: 333px;
+}
+
+.container_description_partenariat {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // border: solid 2px red;
+  padding-left: 10px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.Title {
+  text-align: left;
+  font: normal normal 900 4.375rem/82px Metropolis;
+  letter-spacing: 0px;
+  color: #4a80a4;
+}
+
+.Text {
+  text-align: left;
+  font: normal normal normal 1.4375rem/26px Metropolis;
+  color: #434345;
+}
+
+@media screen and (max-width: 770px) {
+  .Title {
+    font-size: 2.1875rem;
+    line-height: 50px;
+  }
+
+  .Text {
+    font-size: 0.7rem;
+    line-height: 20px;
+  }
+
+  .Container {
+    flex-wrap: wrap;
+  }
+}

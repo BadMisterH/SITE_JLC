@@ -1,0 +1,514 @@
+@import "./mixins";
+
+.fondJL {
+  @include backgroundFullSize(
+    url(/logoOfficielJL/fond_JL-Consulting_logo.svg),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  opacity: 0.5;
+  position: absolute;
+  height: 210%;
+  width: 100%;
+  top: 100px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.header {
+  background: rgb(0, 87, 132);
+  background: linear-gradient(
+    96deg,
+    rgba(0, 87, 132, 1) 23%,
+    rgba(52, 167, 208, 1) 65%,
+    rgba(66, 188, 227, 1) 100%
+  );
+  width: 100%;
+  height: 106px;
+  position: fixed;
+  z-index: 10;
+}
+
+.section_one {
+  // border: solid 2px red;
+  width: 100%;
+  display: flex;
+  margin-bottom: 240px;
+}
+
+.cicrleAppBox {
+  // height: 766px;
+  width: 40%;
+  // border: solid 2px yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 124px;
+  margin-top: 150px;
+}
+
+.FormationImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/formation-jl-consulting_dark.png"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FormationImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/formation-jl-consulting_dark.png"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FormationImg:before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.AuditImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/audit-jl-consulting-reunion_dark.png"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AuditImg:before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.LobsterImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/Partenaire_img/Lobster_img/lobster-jl-consulting_dark.jpg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LobsterImg:before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.CenshareImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/Partenaire_img/Censhare_img/censhare-jl-consulting-partenaire_dark.jpg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CenshareImg:before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.RingoverImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/Partenaire_img/Ringover_img/ringover-jl-consulting-partenaire_dark.jpg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RingoverImg:before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.CRMImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/Img_CRM/CRMside_6_dark.png"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CRMImg:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.AppImg {
+  // border: solid 2px red;
+  width: 100%;
+  // border: solid 2px;
+  border-radius: 50%;
+  margin: 28px auto;
+  @include backgroundFullSize(
+    url("/assets/img/AppJLC.jpg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AppImg:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.circleAppContainer {
+  border: 14px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.circleAppContainer::after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.TitileAppImg {
+  font: normal normal 900 6.5rem Metropolis;
+  color: #ffffff;
+  position: absolute;
+}
+
+.blocDescriptionApp {
+  // border: solid 2px blue;
+  display: flex;
+  flex-direction: column;
+  padding: 41px 117px 41px;
+  justify-content: center;
+  width: 60%;
+}
+
+.AppTitle {
+  font: var(--unnamed-font-style-normal) normal bold 6.25rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font: normal normal bold 6.25rem Metropolis;
+  color: #3a3a3a;
+  font-size: calc(100 * var(--res)) !important;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.descriptionApp {
+  text-align: left;
+  font: normal normal 300 1.56rem/30px Metropolis;
+  font-weight: 400;
+  opacity: 1;
+  margin-top: 31px;
+}
+
+.ApplicationLogoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  // border: solid 2px;
+  justify-content: center;
+  margin: 240px auto 153px; //a changer pour le responsive
+}
+
+.logoApp {
+  height: 192px;
+  width: 192px;
+  object-fit: contain;
+  margin: 0 38.5px;
+  // border: solid 2px red;
+}
+
+.TitleDI {
+  font: var(--unnamed-font-style-normal) normal 900 4.3rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal 900 4.3rem Metropolis;
+  color: #3f3f3f;
+  text-transform: uppercase;
+  font-size: calc(70 * var(--res)) !important;
+}
+
+.BlocDIdescription {
+  width: fit-content;
+  text-align: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 20px #00000012;
+  border-radius: 15px;
+  // border: solid 2px;
+}
+
+#TitileAppImg {
+  font-size: calc(70 * var(--res));
+}
+
+.blocDI {
+  padding: 34px 57px 34px;
+  width: 444px;
+}
+
+.BlocContainerDI {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 51px auto;
+  justify-content: center;
+}
+
+.text_four {
+  padding: "0px 90px"; // a revoir lier avec paragraph_restituer
+}
+
+@media screen and (max-width: 1024px) {
+  .blocDescriptionApp {
+    padding: 120px 80px 20px;
+  }
+
+  .TitileAppImg {
+    font-size: 1.8rem;
+  }
+
+  .AppTitle {
+    font-size: 4.8rem !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .blocDI {
+    width: 224px;
+  }
+
+  .AppTitle {
+    font-size: 2.8rem !important;
+  }
+
+  .descriptionApp {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 20px;
+  }
+
+  .header {
+    height: 48px;
+  }
+
+  .section_one {
+    margin-bottom: 30px;
+  }
+
+  .section_one {
+    flex-direction: column;
+  }
+
+  .cicrleAppBox {
+    margin: 100px auto 0px;
+  }
+
+  .text_four {
+    padding: "0px 10px"; // a revoir lier avec paragraph_restituer
+  }
+
+  .blocDescriptionApp {
+    width: auto;
+    padding: 20px 80px 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section_one {
+    display: flex;
+    flex-direction: column;
+  }
+  .blocDescriptionApp {
+    padding: 0px 20px 0px;
+    margin: 0 auto;
+  }
+
+  .cicrleAppBox {
+    margin: 100px auto -50px;
+  }
+
+  .TitileAppImg {
+    font-size: 1.1rem;
+    width: fit-content;
+  }
+  .descriptionApp {
+    margin: 10px 10px;
+  }
+  #TitileAppImg {
+    font-size: 1rem;
+  }
+
+  .circleAppContainer {
+    border: solid 2px white;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .blocDescriptionApp {
+    width: auto;
+    padding: 20px 10px 20px;
+    margin: 0 20px;
+  }
+
+  .AppTitle {
+    font-size: 1.8rem !important;
+  }
+}
+
+//Bonus APP Styles
+
+.ContainerD_intervention {
+  width: 70%;
+  margin: 0 auto;
+  // border: solid 2px purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.NumLogo {
+  width: 139px;
+  height: 205px;
+}
+
+#Pair {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.descriptionNum {
+  text-align: center;
+  font: normal normal normal 2.0625rem/29px Metropolis;
+  color: #434345;
+}
+
+.BoxNumber {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 20px #00000012;
+  border-radius: 15px;
+  opacity: 1;
+  width: 816px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.BoxDisposition {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.BoxDispositionRight {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Number {
+  border: solid 2px red;
+}
+
+@media screen and (max-width: 800px) {
+  .descriptionNum {
+    font-size: 1rem;
+  }
+
+  .ApplicationLogoContainer {
+    margin: 30px auto;
+  }
+
+  .logoApp {
+    height: 92px;
+    width: 92px;
+  }
+
+  .NumLogo {
+    width: 64px;
+    height: 102px;
+  }
+}

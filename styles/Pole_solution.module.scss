@@ -1,0 +1,303 @@
+@import "./mixins";
+
+.BlocConsulting {
+  width: 50.78125vw;
+  height: 384px;
+  background-color: #41a9b5;
+  border-radius: 17px;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(-150%);
+}
+
+.containerConsulting {
+  background: url("/logoOfficielJL/fond_JL-Consulting_logo.svg") no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  opacity: 0.13;
+  z-index: -1;
+}
+
+.cercleConsulting {
+  border: solid 8px white;
+  width: 19vw;
+  height: 370px;
+  position: relative;
+  bottom: 80%;
+  margin-left: 340px;
+  transform: translateY(-80%);
+  border-radius: 200px;
+}
+
+.cercleConsultingFormation {
+  border: solid 8px #3a3a3a;
+  position: absolute;
+  width: 529px;
+  height: 540px;
+  top: 18%;
+  margin-left: 100px;
+  transform: translateY(-80%);
+  border-radius: 300px;
+  opacity: 0.17;
+  z-index: -300;
+}
+
+.cercleConsultingVie {
+  border: solid 8px #3a3a3a;
+  position: absolute;
+  width: 529px;
+  height: 540px;
+  top: 265px;
+  margin-left: 100px;
+  transform: translateY(-80%);
+  border-radius: 300px;
+  opacity: 0.17;
+  z-index: -1;
+}
+
+.cercleConsultingAudit {
+  border: solid 8px #3a3a3a;
+  position: absolute;
+  width: 529px;
+  height: 540px;
+  top: 580px;
+  margin-left: 380px;
+  transform: translateY(-80%);
+  border-radius: 300px;
+  opacity: 0.17;
+  z-index: -1;
+}
+
+.ColorConsulting {
+  filter: brightness(0) invert(1);
+}
+
+.bloc_principale_consulting {
+  //   border: solid 2px blue;
+  position: relative;
+  margin-top: -482px;
+}
+
+.bloc_secondaire_formation {
+  //   border: solid 10px yellowgreen;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.text_bloc_principale_consulting {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300)
+    25px/30px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal 300 25px/30px Metropolis;
+  letter-spacing: 0px;
+  color: #3a3a3a;
+  width: 52vw;
+  margin: 0 auto;
+  font-weight: 500 !important;
+}
+
+.ImgConsultingFormation {
+  height: 573px;
+  width: 50vw;
+  position: relative;
+  right: 73px;
+  margin: 121px auto;
+  background: url("/assets/img/formation-jl-consulting.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container_box_audit {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.ImgConsultingAudit {
+  height: 573px;
+  width: 50vw;
+  justify-content: flex-end;
+  margin: 121px;
+  background: url("/assets/img/audit-jl-consulting-reunion.png");
+  background-size: cover;
+}
+
+.container_box_vie {
+  width: 100%;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.ImgConsultingVie {
+  height: 573px;
+  width: 50vw;
+  margin-left: 9.27vw;
+  background: url("/assets/img/vis-ma-vie-jl-consulting.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.box_consulting {
+  width: 39vw;
+  height: 303px;
+  background-color: white;
+  align-items: flex-end;
+  border-radius: 16px;
+  box-shadow: 0px 3px 33px #0000001a;
+  position: relative;
+  top: 73px;
+  right: 233px;
+  display: flex;
+}
+
+.box_audit {
+  width: 39vw;
+  height: 303px;
+  right: 33px;
+  background-color: white;
+  align-items: flex-start;
+  border-radius: 16px;
+  box-shadow: 0px 3px 33px #0000001a;
+  position: relative;
+  bottom: 71px;
+  display: flex;
+}
+
+.box_Vie {
+  width: 39vw;
+  height: 303px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0px 3px 33px #0000001a;
+  position: relative;
+  top: 71px;
+  left: 9.58vw;
+}
+
+.titre_bloc_formation {
+  font: var(--unnamed-font-style-normal) normal bold 70px/179px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  letter-spacing: 0px;
+  height: auto;
+  color: #3f3f3f;
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.description_bloc {
+  font: var(--unnamed-font-style-normal) normal normal 23px/23px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal normal 23px/23px Metropolis;
+  letter-spacing: 0px;
+  color: #3f3f3f;
+  width: 31vw;
+  height: fit-content;
+  margin: 22px auto;
+}
+
+.container {
+  margin: auto;
+  justify-content: center;
+}
+
+.footerDescription {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: 100%;
+  object-position: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
+.titreAdopt {
+  font: var(--unnamed-font-style-normal) normal bold 30px/36px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal bold 30px/36px Metropolis;
+  letter-spacing: 0px;
+  color: #005784;
+  text-transform: uppercase;
+  margin-top: 87px;
+}
+
+.blocAdopt {
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  width: 100%;
+  background: url("/assets/img/banniereJLC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 112px;
+}
+
+.logos_clients {
+  height: 120px;
+  width: 120px;
+  margin: 0 37px;
+  background: url("/assets/img/logosClients/12_atid.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logos_clients2 {
+  height: 100px;
+  width: 150px;
+  margin: 0 37px;
+  background: url("/assets/img/logosClients/8_clarins.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 30%;
+}
+
+.logos_clients3 {
+  background: url("/assets/img/logosClients/16_BordeauxTourismeBLANc.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+  margin: 0 37px;
+}
+
+.logos_clients4 {
+  background: url("/assets/img/logosClients/31_lapeyre.png");
+  height: 130px;
+  width: 130px;
+  margin: 0 37px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 30%;
+}
+
+@media screen and (max-width: 700px) {
+  .ImgConsultingFormation {
+    position: relative;
+    right: 0;
+  }
+
+  .ImgConsultingAudit {
+    margin: 68px auto;
+    justify-content: center;
+  }
+
+  .ImgConsultingFormation,
+  .ImgConsultingVie,
+  .ImgConsultingAudit {
+    height: 124px;
+    width: 202px;
+  }
+}

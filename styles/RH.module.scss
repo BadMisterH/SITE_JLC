@@ -1,0 +1,404 @@
+//JoinTeam scsss
+
+.container_teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  //   border: solid 2px;
+  padding-top: 100px;
+}
+
+.title_team {
+  font-size: 5.625rem;
+  font-family: Metropolis;
+  color: #3f3f3f;
+  font-weight: 900;
+  margin-bottom: 69px;
+  padding: 0 20px;
+}
+
+.URL {
+  border: solid 2px;
+}
+
+.description_teams {
+  font: 1.4375rem Metropolis;
+  letter-spacing: 0.23px;
+  width: 700px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.imgTeams {
+  width: 542px;
+  height: 754px; //a modifier pour le responsive
+  border-radius: 21px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.container_img_teams {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.container_one_teams {
+  //   border: solid 2px black;
+  position: relative;
+  right: 100px;
+  bottom: 60px;
+}
+
+.icon_teams {
+  height: 241px;
+  width: 145px;
+  //   border: solid 2px;
+  align-self: flex-start;
+  position: absolute;
+  object-fit: cover;
+  top: 110px;
+  margin-left: -60px;
+}
+
+.icon_teams_two {
+  height: 241px;
+  width: 185px; // a modifier pour le resposnive
+  //   border: solid 2px red;
+  align-self: flex-end;
+  justify-content: flex-end;
+  object-fit: cover;
+  position: relative;
+  bottom: 150px;
+  left: 100px;
+}
+
+.Link {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 35px #00000029;
+  border-radius: 17px;
+  padding: 30px;
+  border: none;
+}
+
+.p {
+  font: normal 1.625rem/28px Metropolis;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+//section 2
+
+.gridMarketing {
+  display: grid;
+  width: fit-content;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 385px);
+  grid-gap: 48px;
+  margin: 0px auto 200px;
+  //   border: solid 2px red;
+  justify-content: center;
+}
+
+.boxMarketing {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 4px solid #707070;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.containerboxMarketing {
+  //   border: solid 2px green;
+  width: 70%;
+  margin: 90px auto;
+}
+
+.ulMission {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300)
+    1.4375rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 300 1.4375rem Metropolis;
+  letter-spacing: 0px;
+  color: #000000;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.ul_container {
+  margin: 29px 0 108px 0;
+}
+
+.title_box_section_one {
+  font: var(--unnamed-font-style-normal) normal bold 33px/40px Metropolis;
+  text-align: center;
+  font: normal normal bold 33px/40px Metropolis;
+  letter-spacing: 3.3px;
+  color: #e3ac63;
+}
+
+.text_search {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300)
+    1.4375rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 300 1.4375rem Metropolis;
+  letter-spacing: 0px;
+  color: #000000;
+  list-style-type: none;
+  line-height: 30px;
+  margin: 20px 0 108px 0;
+}
+
+.h1_CI {
+  font: var(--unnamed-font-style-normal) normal bold 3.125rem Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal bold 3.125rem Metropolis;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-bottom: 92px;
+}
+
+.h2_CI {
+  text-transform: uppercase;
+  font: var(--unnamed-font-style-normal) normal bold 2rem Metropolis;
+  font: normal normal bold 2rem Metropolis;
+  letter-spacing: 1.6px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.textRH {
+  position: relative;
+  left: 100px;
+  //   padding-right: 100px;
+}
+
+.container_img_teams {
+  margin-top: 20px;
+}
+
+.font_list_Mission {
+  font-family: Metropolis;
+}
+
+.description_box_section_one {
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal medium 26px/27px Metropolis;
+}
+
+.Paris {
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal medium 26px/27px Metropolis;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1420px) {
+  .container_teams {
+    // border: solid 2px red;
+    display: flex;
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+
+  .icon_teams_two {
+    justify-content: flex-end;
+    position: relative;
+    margin: 0;
+  }
+
+  .gridMarketing {
+    display: grid;
+    // border: solid 2px red;
+    width: fit-content;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 285px);
+    grid-gap: 28px;
+    margin-top: 100px;
+    //   border: solid 2px red;
+    justify-content: center;
+  }
+
+  .imgTeams {
+    height: 554px;
+    width: 342px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title_team {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 100px;
+  }
+
+  .description_teams {
+    width: auto;
+  }
+  .icon_teams {
+    height: normal;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container_img_teams {
+    margin-top: 10px;
+  }
+
+  .gridMarketing {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gridMarketing {
+    display: grid;
+    // border: solid 2px red;
+    width: fit-content;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 155px);
+    grid-gap: 28px;
+    margin-top: 100px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .text_search {
+    margin-bottom: 40px;
+  }
+
+  .icon_teams {
+    position: relative;
+    top: 150px;
+  }
+
+  // .containerboxMarketing {
+  //   display: flex;
+  //   justify-content: center;
+  //   border: solid 2px red;
+  // }
+
+  //   .textRH {
+  //     padding-left: 120px;
+  //   }
+
+  .container_teams {
+    padding-top: 0px;
+    margin-top: -150px;
+  }
+
+  .title_team {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 100px;
+  }
+
+  .h1_CI {
+    font-size: 1.25rem;
+  }
+
+  .title_box_section_one,
+  .h2_CI {
+    font-size: 0.85rem;
+  }
+
+  .title_box_section_one {
+    width: 100px;
+    // border: solid 2px blue;
+    font-size: 10px;
+  }
+
+  .description_teams {
+    // width: 300px;
+    font-size: 0.7375rem;
+    line-height: 20px;
+  }
+
+  .description_box_section_one,
+  .ulMission,
+  .text_search {
+    font-size: 0.5375rem;
+  }
+
+  .imgTeams {
+    height: 400px;
+    width: 250px;
+    // border: solid 2px;
+  }
+
+  .p {
+    font: normal 1.125rem/28px Metropolis;
+    text-align: center;
+    color: #3a3a3a;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .icon_teams_two,
+  .icon_teams {
+    height: 100px;
+    width: 150px;
+    border-radius: 20px;
+  }
+
+  .gridMarketing {
+    margin-top: 0px;
+  }
+
+  .gridMarketing {
+    margin-top: 0px;
+  }
+
+  .icon_teams {
+    position: absolute;
+    top: 50px;
+  }
+
+  .icon_teams_two {
+    position: relative;
+    bottom: 80px;
+    left: 30px;
+  }
+
+  .container_teams {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gridMarketing {
+    display: grid;
+    // border: solid 2px red;
+    width: fit-content;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 155px);
+    grid-gap: 28px;
+    //   border: solid 2px red;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .text_search {
+    line-height: 10px;
+  }
+
+  .imgTeams {
+    height: 300px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,279 @@
+@import "./mixins";
+
+.blocs {
+  width: 100%;
+  padding-top: 150px;
+  // border : solid 2px black;
+  display: grid;
+  margin: 0 20px 0 20px;
+  grid-template-columns: 1fr 0.7fr;
+  grid-gap: 20px;
+  @include Font(("Metropolis", sans-serif), #005784, initial, 450, 1.5);
+  // background : url("/direction.svg") no-repeat center;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten {
+  // border : solid 2px black;
+  margin: 100px 20px 100px 0;
+}
+
+.imageBackground {
+  position: absolute;
+  margin-top: 72%;
+  margin-left: 25%;
+}
+
+.h1 {
+  text-transform: uppercase;
+}
+.one {
+  padding: 20px 100px 20px 100px;
+}
+.three {
+  padding-top: 80px;
+}
+.five,
+.eight,
+.nine {
+  margin: 0 auto;
+}
+
+.eleven {
+  // width : 100%;
+  width: auto;
+  height: 42vh;
+  border: none;
+}
+
+.fondJLC {
+  padding: 200px 0 100px 0;
+  @include backgroundFullSize(
+    url("../images/fondJLC.svg"),
+    center,
+    no-repeat,
+    100%,
+    #ecf4fd
+  );
+  @include Font(("Metropolis", sans-serif), none, none, none, initial);
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 5px 15px -5px #000000;
+  box-shadow: 5px 5px 15px -5px #000000;
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 500ms ease-in-out;
+  }
+}
+
+#bloc2 {
+  position: relative;
+  top: 350px;
+}
+
+.spaceImg {
+  margin-bottom: 20px;
+}
+
+.BoxPuzzle {
+  width: 100%;
+}
+
+.puzzleTexts {
+  // border: solid 2px green;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  width: 100%;
+}
+
+.imgPuzzle {
+  // @include backgroundFullSize(
+  //   url("../images/puzzleProblematique.svg"),
+  //   center,
+  //   no-repeat,
+  //   50%,
+  //   initial
+  // );
+  height: 490px;
+  width: 50%;
+}
+
+.boxProblematique {
+  display: flex;
+}
+
+.aaa {
+  border: solid 2px black;
+  padding: 100px;
+  color: red;
+}
+
+#navbarr {
+  background-color: red;
+}
+
+.Banner {
+  // @include backgroundFullSize(
+  //   url("../images/banniere.svg"),
+  //   center,
+  //   no-repeat,
+  //   100%,
+  //   initial
+  // );
+  object-fit: contain;
+  height: 480px;
+  // margin-top: 100px;
+  // margin-bottom: 50px;
+}
+
+.Banner2 {
+  // @include backgroundFullSize(
+  //   url("../images/banniere2.svg"),
+  //   center,
+  //   no-repeat,
+  //   100%,
+  //   initial
+  // );
+  height: 480px;
+  // margin-top: 200px;
+}
+
+.IconBanner {
+  // background : url("../images/iconBanner.svg");
+  // background-position: center;
+  // background-size: 50%;
+  // background-repeat: no-repeat;
+  @include backgroundFullSize(
+    url("../images/iconBanner.svg"),
+    center,
+    no-repeat,
+    50%,
+    initial
+  );
+  height: 200px;
+  margin: 30px;
+}
+
+.Position {
+  height: auto;
+  // border: solid 2px black;
+  width: 100%;
+  margin: auto;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.bloccs {
+  // border : solid 2px black;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bloccss {
+  width: 538px;
+  height: 750px;
+  @include backgroundFullSize(
+    url("../images/workk.jpg"),
+    center,
+    no-repeat,
+    100%,
+    initial
+  );
+}
+.titre {
+  @include Font(("Metropolis", sans-serif), #000000, 21px, 450, 1.5);
+}
+
+.textts {
+  @include Font(("Metropolis", sans-serif), #000000, 20px, 450, 1.5);
+  width: 80%;
+  margin: 0;
+}
+
+.section2 {
+  width: 83vw;
+  margin: 0 auto;
+  height: 600px;
+  justify-content: center;
+  // border : solid 2px black;
+  display: grid;
+  grid-template-columns: repeat(4, 17.1875vw);
+}
+
+.circle {
+  height: auto;
+  margin: 20px;
+  flex-wrap: wrap;
+  border-radius: 100%;
+  border: solid 2px black;
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in-out;
+  }
+}
+
+.section3 {
+  height: 1032px;
+  width: 83vw;
+  // border : solid 2px blue;
+  -webkit-box-shadow: 5px 5px 15px 0px #747474;
+  box-shadow: 5px 5px 15px 0px #747474;
+  padding: 70px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 31.25vw);
+  justify-content: center;
+  grid-gap: 100px;
+}
+
+.bloc1Sectio3,
+.bloc2Section3,
+.bloc3Section3,
+.bloc4Section3 {
+  height: auto;
+  width: auto;
+  -webkit-box-shadow: 5px 5px 15px 0px #747474;
+  box-shadow: 5px 5px 15px 0px #747474;
+  padding: 20px;
+  border-radius: 20px;
+  @include Font(("Metropolis", sans-serif), #000000, normal, 450, 1.5);
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 500ms ease-in-out;
+  }
+}
+
+.bloc1Section3 {
+  height: fit-content;
+  margin: auto 0;
+}
+.TitrePrincipale {
+  @include Font(("Metropolis", sans-serif), #747474, 78px, 450, 1.5);
+}
+
+@media screen and (max-width: 1900px) {
+  .vanishingBackground {
+    display: none;
+  }
+}

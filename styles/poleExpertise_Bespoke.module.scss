@@ -1,0 +1,159 @@
+@import "./mixins";
+
+.bloc_img_Bespoke {
+  @include backgroundFullSize(
+    url("/assets/img/pole-bespoke-jl-consulting-.png"),
+    center,
+    no-repeat,
+    100%,
+    initial
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 102px 0 0px;
+}
+
+.bloc_img_Expertise {
+  @include backgroundFullSize(
+    url("/assets/img/pole-expertise-jl-consulting-puzzle-expert.jpg"),
+    center,
+    no-repeat,
+    100%,
+    initial
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 102px 0 0px;
+  height: 93%;
+}
+
+.Container_section_two {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.description_expertise_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.Expertise_title_section_two {
+  text-align: left;
+  font: normal normal 900 4.375rem/82px Metropolis;
+  color: #cfe3f9;
+  width: 1014px;
+}
+
+.ExpertiseBespoke_description_section_two {
+  font: normal normal normal 1.4375rem/26px Metropolis;
+  color: #434345;
+  font-weight: 500;
+  width: 885px;
+}
+
+.description_container_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 100px;
+}
+
+.ExpertiseBespoke_description_section_two_title_section_two_JL_Consulting {
+  text-align: right;
+  font: normal normal 900 70px/82px Metropolis;
+  color: #cfe3f9;
+  width: 1014px;
+}
+
+.containerSection_three {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  justify-content: center;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bloc_container_descritption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 20px #00000012;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 30px;
+  margin: auto 20px;
+}
+
+.titleh1_bloc {
+  font: var(--unnamed-font-style-normal) normal 900 3.125rem/60px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal 900 3.125rem/60px Metropolis;
+  letter-spacing: 0px;
+  color: #cfe3f9;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.bloc_description {
+  width: 463px;
+  padding: 19 46px;
+  font: var(--unnamed-font-style-normal) normal normal 1.4375rem/30px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal normal 1.4375rem/30px Metropolis;
+  letter-spacing: 0px;
+  color: #434345;
+}
+
+.ImgExpertise {
+  width: 245px;
+  height: 245px;
+}
+
+@media screen and (max-width: 1024px) {
+  .containerSection_three {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ExpertiseBespoke_description_section_two {
+    width: auto;
+  }
+
+  .ExpertiseBespoke_description_section_two_title_section_two_JL_Consulting,
+  .Expertise_title_section_two {
+    width: auto;
+    font-size: 2rem;
+    line-height: 45px;
+  }
+  .bloc_description {
+    width: auto;
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+  .titleh1_bloc {
+    font-size: 1.875rem;
+  }
+
+  #TitleFCE {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #text {
+    margin-top: 100px !important;
+  }
+}

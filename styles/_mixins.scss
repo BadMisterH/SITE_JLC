@@ -1,0 +1,31 @@
+@mixin flexbox ($pos, $vertical, $horizontal, $direction){
+    display: $pos;
+    align-items: $vertical;
+    justify-content: $horizontal;
+    flex-direction: $direction;
+}
+
+@mixin backgroundFullSize ($img, $position, $repeatOrNot, $size, $color) {
+  background: $img;
+  background-position: $position;
+  background-repeat: $repeatOrNot;
+  background-size: $size;
+  background-color : $color;
+}
+
+@mixin Font ($fontFamilly, $colorFont, $sizePolice, $fontWeight, $fontHeight){
+  font-family : $fontFamilly;
+  color : $colorFont;
+  font-size : $sizePolice;
+  font-weight : $fontWeight;
+  line-height : $fontHeight;
+}
+
+// @mixin Grid ($display, $columnSize, $gridSpace){
+//   display : $display;
+//   grid-template-columns : $columnSize;
+//   grid-gap : $gridSpace;
+// }
+
+//mixin for CRM
+

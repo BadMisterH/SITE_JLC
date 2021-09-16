@@ -1,0 +1,217 @@
+@import "./mixins";
+
+.section_container_img_text {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.section_CRMSide_description,
+.section_container_img_text_one {
+  //   border: solid 2px yellow;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 200px;
+}
+
+.h1CRM,
+.h1CRM_right {
+  font: normal normal 900 4.375rem/82px Metropolis;
+  color: #cfe3f9;
+}
+
+#ContainerLeft {
+  flex-direction: row-reverse;
+}
+
+.ImgCRM {
+  width: 443px;
+  height: 443px;
+  padding: 30px;
+}
+
+.liCRM {
+  margin-bottom: 15px;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 300 1.4375rem Metropolis;
+  letter-spacing: 0px;
+  color: #434345;
+  font-weight: 500;
+}
+
+.h1CRMSide {
+  text-align: right;
+  font: normal normal 900 4.375rem/82px Metropolis;
+  letter-spacing: 0px;
+  color: #4a80a4;
+}
+
+.h2CRMSide {
+  font: var(--unnamed-font-style-normal) normal bold 1.5625rem/30px Metropolis;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font: normal normal bold 1.5625rem/30px Metropolis;
+  color: #529bd4;
+}
+
+.h2WhyCRMSide {
+  text-align: left;
+  font: normal normal 900 4.375rem/82px Metropolis;
+  color: #087185;
+}
+
+.descriptionCRM {
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font: normal normal normal 1.4375rem/26px Metropolis;
+  letter-spacing: 0px;
+  color: #434345;
+}
+
+.descriptionCRM_bold {
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: right;
+  font: normal normal normal 1.4375rem/26px Metropolis;
+  letter-spacing: 0px;
+  color: #434345;
+  font-weight: bold;
+}
+
+.ImgEntrepriseFunction_img {
+  width: 191px;
+  height: 162px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.Img_France {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloc_img_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.BlocBackgroundCRM {
+  height: 100%;
+  @include backgroundFullSize(
+    url("/assets/img/Img_CRM/Photo accueil.png"),
+    50% 60%,
+    no-repeat,
+    cover,
+    normal
+  );
+}
+
+.BlocCRM {
+  width: 100%;
+  height: 340px;
+  border: solid 2px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.BlocCRM_section {
+  display: flex;
+  //   border: solid 2px green;
+  justify-content: flex-start;
+  padding: 0px 100px;
+  align-content: center;
+  width: 100%;
+}
+
+.CircleCRMSide {
+  width: 237px;
+  height: 235px;
+  @include backgroundFullSize(
+    url("/assets/img/Img_CRM/LOGO_CRMSIDE.svg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  border-radius: 50%;
+  background-size: 70%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.PourEnSavoirPlus {
+  width: 282px;
+  height: 117px;
+  @include backgroundFullSize(
+    url("/assets/img/Img_CRM/cliquez_pour_en_savoir_plus.svg"),
+    center,
+    no-repeat,
+    cover,
+    normal
+  );
+  align-self: flex-end;
+  filter: brightness(0) invert(1);
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 1310px) {
+  .section_container_img_text,
+  .section_CRMSide_description,
+  #ContainerLeft,
+  .Img_France {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #TitleCRMSide {
+    margin-top: 100px;
+  }
+
+  .section_CRMSide_description,
+  .section_container_img_text_one {
+    margin-bottom: 100px;
+  }
+  .h1CRMSide,
+  .h1CRM,
+  .h1CRM_right,
+  .h2WhyCRMSide {
+    margin-top: 100px;
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .h2CRMSide {
+    font-size: 1.3rem;
+  }
+
+  .descriptionCRM {
+    font-size: 1rem;
+  }
+
+  .liCRM {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .ImgCRM {
+    width: 351px;
+    height: 162px;
+    padding: 0px;
+  }
+
+  .bloc_img_text {
+    margin-bottom: 30px;
+  }
+
+  .CircleCRMSide {
+    width: 250px;
+    height: 100px;
+  }
+}
